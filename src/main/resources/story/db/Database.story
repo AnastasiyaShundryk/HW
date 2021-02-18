@@ -1,4 +1,4 @@
-Description: Simple Database result set test
+escription: Simple Database result set test
 Meta:
     @skip
 
