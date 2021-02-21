@@ -1,17 +1,9 @@
 Scenario: sign up user with composite steps 
 
 Given I am on the main application page
-
-
 When I click on element located `By.xpath(//div/a[2])`
-
-
 When I enter <email>, <name> and <password> in the registration form
-
 When I click on element located `By.xpath(//*[@id='signup-submit']/span/span)`
-
-
-
 
 Examples:
 |email										|name								|password|
