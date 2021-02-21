@@ -1,5 +1,5 @@
 Scenario: sign in user
-!--GivenStories: story/web/preconditionTask2.story!-- When I enter `${email_var}` in field located `By.xpath(//input[@id='user'])` - 12!-- When I enter `${password_var}` in field located `By.xpath(//input[@id='password'])` - 16
+!--GivenStories: story/web/test2/precondition.story
 
 
 Given I am on the main application page
@@ -7,10 +7,13 @@ Then the page title is equal to 'Trello'
 When I click on element located `By.xpath(//nav/div/a[1])`
 Then the page with the URL containing '/login' is loaded
 
+
+!-- When I enter `${email_var}` in field located `By.xpath(//input[@id='user'])`
 When I enter `<email>` in field located `By.xpath(//input[@id='user'])`
 When I wait until element located `By.xpath(//input[@value='Log in with Atlassian'])` appears
 When I click on element located `By.xpath(//input[@value='Log in with Atlassian'])`
 When I wait until element located `By.xpath(//*[@id="login-submit"]/span/span)` appears
+!-- When I enter `${password_var}` in field located `By.xpath(//input[@id='password'])`
 When I enter `<password>` in field located `By.xpath(//input[@id='password'])`
 When I click on element located `By.xpath(//*[@id="login-submit"]/span/span)`
 When I wait until element located `By.xpath(//*[@id="header"]/div[1]/div[1]/button/span/span)` appears

@@ -1,6 +1,5 @@
 Scenario: Sign Up scenario as precondition
-Meta:   
- @skip
+
 Given I am on the main application page
 When I click on element located `By.xpath(//div/a[2])`
 When I initialize the STORY variable `email_var` with value `<email>`
